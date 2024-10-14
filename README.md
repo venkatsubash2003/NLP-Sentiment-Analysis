@@ -116,15 +116,15 @@ Text preprocessing steps include:
 2. 🚫 Removing special characters and numbers
 3. 🔪 Tokenization
 4. 🛑 Removing stop words
-5. 🌱 Lemmatization
+5. 🌱 Stemming
 6. ❗ Handling negations
 
 ## 🤖 Modeling
 
 We employed a machine learning pipeline with the following components:
-1. **Text Vectorization:** 🔤 CountVectorizer with n-grams (1,2)
-2. **Feature Scaling:** 📏 StandardScaler
-3. **Classifier:** 🌳 XGBoost
+1. **Text Vectorization:** 🔤 CountVectorizer
+2. **Feature Scaling:** 📏 MinMaxScaler
+3. **Classifier:** 🌳 RandomForestClassifier
 
 Hyperparameter tuning was performed using GridSearchCV to optimize model performance.
 
